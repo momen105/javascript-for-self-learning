@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p><b>IIFEs :</b> (Immediately Invokeable Functions Expressions)</p>
+    <p><b>Functions Expressions :</b>Putting a function in the middle of a variable is called  Functions Expressions . <br>
+         () = parentheses, {} = curly bracket, []= square bracket, <> = angle bracket</p>
+
+
+    <script>
+        ///IIFEs :
+        (function display() {
+            document.write("This is Immediately Invokeable Functions Expressions <br>")
+        })();
+
+        (function add(a, b) {
+            var sum = a + b;
+            document.write("sum : " + sum + "<br>");
+        })(2, 3)
+    </script>
+
+    <script>
+        ///Functions Expressions 
+        
+        const display2 = function displayMess(msg){
+            document.write(msg)
+        };
+        display2("This is Functions Expressions")
+
+    </script>
+</body>
+
+</html>

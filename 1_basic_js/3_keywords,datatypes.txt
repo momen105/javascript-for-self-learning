@@ -1,0 +1,21 @@
+# keyword are tokens that have special meaning in JavaScript
+
+---->break, case, catch, continue, debugger, default, delete, do, else, finally, for, function, 
+     if, in, instanceof, new, return, switch, this, throw, try, typeof, var, void, while, with
+
+# Data type
+
+    1) String 
+    2) Number
+    3) Boolean
+    4) Objects
+
+# Comment (ctrl+A+/)
+    1) Single-line Comment : // Md.tohin
+    1) Multiple-line Comment : /*
+                                Name : Md.tohin
+                                phone : +880 
+                                */
+
+                                 
+                                 
