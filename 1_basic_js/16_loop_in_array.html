@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><b>Loop in Array : </b></p>
+    <script>
+        var num = [10, 20, 30, 40, 50];
+
+        for (var i =0; i < 5; i++){
+            document.write(num[i]+" ");
+        }
+    </script>
+ <br>
+<script>
+    var num = [10, 20, 30, 40, 50];
+    var sum = 0;
+    document.write("Sum of array element : ")
+    for (var i =0; i < 5; i++){
+        document.write(num[i]+" + ");
+        sum = sum + num[i];
+    }
+    document.write(" = "+ sum);
+</script>
+<br>
+<script>
+    var num = new Array();
+    for( var i=0; i<5; i++){
+        num[i] = parseInt(prompt("Enter a Number :"));
+    }
+    document.write("Array from user input : "+ num +"<br>");
+    var sum = 0;
+    document.write("Sum of array element : ")
+    for (var i =0; i < 5; i++){
+        document.write(num[i]+" + ");
+        sum = sum + num[i];
+    }
+    document.write(" = "+ sum);
+</script>
+</body>
+</html>

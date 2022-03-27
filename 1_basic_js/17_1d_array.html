@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p><b>1D Array Task</b></p>
+    <ul>
+        <li>Create a function called highestScore</li>
+        <li> receive a id array called scores</li>
+        <li>return the highest score</li>
+    </ul>
+
+    <script>
+        function highestScore(score){
+           var max = score[0];
+           for(var x=1; x<score.length; x++){
+               if (max < score[x]){
+                   max = score[x];
+               }
+           }
+           return max;
+        }
+        var number = [60, 50, 70, 80, 90]; 
+        var maxScore = highestScore(number);
+        document.write("Highest Score : "+ maxScore);
+    </script>
+
+</body>
+
+</html>

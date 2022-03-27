@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p><b>2D Array Task</b></p>
+    <ul>
+        <li>Create a function called highestRunScorer that will </li>
+        <li>Receive a 2d array called playersinfo</li>
+        <li>Based on highest score, return the name of the player</li>
+    </ul>
+    <script>
+        function highestRunScorer(playerinfo) {
+            var highestScorer = playerinfo[0][0];
+            var highestScore = playerinfo[0][1];
+
+            for(var x=1; x<playerinfo.length; x++){
+                if (highestScore< playerinfo[x][1]){
+                    highestScore = playerinfo[x][1];
+                    highestScorer = playerinfo[x][0];
+                }
+            }
+            return highestScorer;
+        }
+        var playerinfo = [["tohin",50],["Ayyan",70],["Rayyan",60],];
+        document.write("Player info : "+ playerinfo + "<br>");
+        var maxScorer = highestRunScorer(playerinfo);
+        document.write("Highest Runer : "+ maxScorer);
+    </script>
+
+</body>
+
+</html>

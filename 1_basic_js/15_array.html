@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><b>Array :</b> is an object; collection of variables</p>
+
+    <script>
+        var name1, name2, name3, name4, name5;
+        name1 = "Momen";
+        name2 = "Tohin";
+        name3 = "Ayyan";
+        name4 = "Apon";
+        name5 = "Ruba";
+        
+        var names = ["Momen","Tohin","Ayyan","Apon","Ruba"]
+        document.write(names + "<br>");
+        document.write("length of array :"+ names.length + "<br>");
+        document.write(names.push("push"));
+        document.write(names + "<br>");
+        document.write("length of array after push :"+ names.length +"<br>");
+        
+        names.pop();
+        document.write("After pop :" + names + "<br>");
+        document.write("length of array after pop :"+ names.length + "<br>");
+    </script>
+    <script>
+        document.write("<b>Concatenation of two array : </b>");
+        var country1 = ["Bangladesh", "India"];
+        var country2 = ["Pakistan", "Nepal"];
+
+        var country = country1.concat(country2);
+        document.write(country);
+    </script>
+</body>
+</html>
